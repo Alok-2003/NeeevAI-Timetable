@@ -1,0 +1,150 @@
+{
+  "workingDays": 6,
+  "periodsPerDay": 7,
+  "periodDuration": 40,
+  "breaks": [
+    { "name": "Short Break", "period": 3 },
+    { "name": "Lunch", "period": 5 }
+  ],
+  "subjects": [
+    { "id": "ENG",  "name": "English",            "weeklyPeriods": 6 },
+    { "id": "HIN",  "name": "Hindi",              "weeklyPeriods": 5 },
+    { "id": "MATH", "name": "Mathematics",        "weeklyPeriods": 6 },
+    { "id": "SCI",  "name": "Science",            "weeklyPeriods": 5, "lab": true },
+    { "id": "SST",  "name": "Social Science",     "weeklyPeriods": 5 },
+    { "id": "COMP", "name": "Computer",           "weeklyPeriods": 2, "lab": true },
+    { "id": "ART",  "name": "Art",                "weeklyPeriods": 1 },
+    { "id": "PE",   "name": "Physical Education", "weeklyPeriods": 2, "doublePeriod": true }
+  ],
+  "teachers": [
+    {
+      "id": "T1",
+      "name": "Asha Sharma",
+      "subjects": ["ENG", "HIN"],
+      "maxLoad": 26,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "Raj Kumar",
+      "subjects": ["MATH"],
+      "maxLoad": 28,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "Neha Verma",
+      "subjects": ["SCI"],
+      "maxLoad": 26,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "Vikram Singh",
+      "subjects": ["SST"],
+      "maxLoad": 26,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "T5",
+      "name": "Priya Nair",
+      "subjects": ["COMP"],
+      "maxLoad": 22,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "T6",
+      "name": "Anil Gupta",
+      "subjects": ["PE", "ART"],
+      "maxLoad": 24,
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "C6A",
+      "name": "Class 6A",
+      "subjects": { "ENG": 6, "HIN": 5, "MATH": 6, "SCI": 4, "SST": 5, "COMP": 1, "ART": 1, "PE": 2 }
+    },
+    {
+      "id": "C6B",
+      "name": "Class 6B",
+      "subjects": { "ENG": 6, "HIN": 5, "MATH": 6, "SCI": 4, "SST": 5, "COMP": 1, "ART": 1, "PE": 2 }
+    },
+    {
+      "id": "C7A",
+      "name": "Class 7A",
+      "subjects": { "ENG": 6, "HIN": 5, "MATH": 6, "SCI": 5, "SST": 5, "COMP": 2, "ART": 1, "PE": 2 }
+    }
+  ],
+  "resources": [
+    {
+      "id": "RSCI",
+      "name": "Science Lab",
+      "type": "lab",
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    },
+    {
+      "id": "RCOMP",
+      "name": "Computer Lab",
+      "type": "computer_lab",
+      "availability": [
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true],
+        [true, true, true, true, true, true, true]
+      ]
+    }
+  ]
+}

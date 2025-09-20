@@ -156,7 +156,9 @@ export default function SetupPage() {
 
   const handleLoadExample = async () => {
     try {
-      const res = await fetch('/exampleSchoolData.json');
+      // Use BASE_URL-safe path so this works when deployed under a subpath
+      const url = `${import.meta.env.BASE_URL}exampleSchoolData.json`;
+      const res = await fetch(url);
       if (!res.ok) throw new Error('Example not found');
       const data = await res.json();
       setForm((prev) => normalizeFormData(data, prev.workingDays, prev.periodsPerDay));
