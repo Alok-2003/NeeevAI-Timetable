@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Tab({ label, active, onClick }) {
   return (
-    <button
+    <button 
       type="button"
       onClick={onClick}
       className={[
